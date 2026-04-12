@@ -31,7 +31,6 @@ public class CrossBrowser {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get("https://demowebshop.tricentis.com/login");
-
 		driver.findElement(By.id("Email")).sendKeys(un);
 		driver.findElement(By.id("Password")).sendKeys(pwd);
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
